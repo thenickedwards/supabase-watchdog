@@ -2,7 +2,9 @@
 
 This repo has been forked from [supabase-inactive-fix](https://github.com/travisvn/supabase-inactive-fix) and has been refactored to support my own project. Huge shout out to @travisvn for their hard work!
 
-Originally I came across [supabase-pause-prevention](https://github.com/travisvn/supabase-pause-prevention) while on a hunt to keep the database for my [Duels Mapping](https://github.com/thenickedwards/duels_mapping/) project.
+Originally I came across [supabase-pause-prevention](https://github.com/travisvn/supabase-pause-prevention) while on a hunt to keep the database for my [Duels Mapping](https://github.com/thenickedwards/duels_mapping/) project, then re-directed to the aforementioned linked/forked repo. Archival tables and at times like the offseason some of the tables in this database don't see frequent updates, so this repo will keep the cloud database alive with bi-weekly updates so that the project isn't paused, the deployed app remains active and available, and the project is not deleted by Supabase ([it happens to the best of us](https://medium.com/@keep.mysupabase.alive/i-lost-a-supabase-project-to-inactivity-so-i-built-a-tool-to-fix-it-701a7076cce4)😢).
+
+Below are my ongoing notes as this repo may go on to keep other Supabase dbs alive 🙃
 
 ## Changelog
 
