@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Duels Mapping",
+    "supabase_url": "https://lpyhpgoslfgbzwjngaqf.supabase.co",
+    "supabase_key_env": "SUPABASE_KEY_1",
+    "table_name": "keep-alive"
+  }
+]
