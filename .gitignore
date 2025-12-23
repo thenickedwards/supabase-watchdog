@@ -178,3 +178,7 @@ cython_debug/
 CLAUDE.md
 .claude
 .cursorignore
+
+# macOS system files
+.DS_Store
+**/.DS_Store
