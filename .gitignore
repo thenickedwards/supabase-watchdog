@@ -140,9 +140,10 @@ venv.bak/
 # Logs
 *.log
 
+# Losing this 🐶
 # Secret keys or sensitive config
-config.json
-config.json.*
+# config.json
+# config.json.*
 
 # Spyder project settings
 .spyderproject
