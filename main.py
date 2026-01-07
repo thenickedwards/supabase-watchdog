@@ -23,9 +23,6 @@ logging.basicConfig(
 )
 
 def main():
-    # TESTING GITHUB ACTIONS FAILURE 🐶
-    print("🚨 ::ERROR:: Critical failure detected in database keep-alive check. 🐶")
-    sys.exit(1)  # This tells GitHub Actions "FAILURE DETECTED"
     # Load configurations from config.json
     try:
         with open('config.json', 'r') as config_file:
