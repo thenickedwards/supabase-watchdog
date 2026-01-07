@@ -3,6 +3,7 @@
 import json
 import os
 import logging
+import sys
 from helpers.utils import generate_secure_random_string
 from services.supabase_service import SupabaseClient
 
@@ -124,6 +125,10 @@ def main():
             logging.warning("Failed databases:")
             for db_name in failed_databases:
                 logging.warning(f"- {db_name}")
+        
+        # Force the script to exit with an error code to make GitHub Actions fail 🐶
+        print("🚨 ::ERROR:: Critical failure detected in database keep-alive check. 🐶")
+        sys.exit(1)  # This tells GitHub Actions "FAILURE DETECTED"
 
     if detailed_status_report and status_report:
         logging.info("\nDetailed Status Report:")
