@@ -36,22 +36,13 @@ class SupabaseClient:
     def delete_oldest_entry(self):
         try:
             # Fetch all IDs from the table ordered by load_datetime
-            response = self.client.table(self.table_name).select('id').order('load_datetime').limit(1).execute()
+            response = self.client.table(self.table_name).select('id, load_datetime').order('load_datetime').limit(1).execute()
             if response.data:
-                # ids = [item['id'] for item in response.data]
                 oldest_id = response.data[0]['id']
                 oldest_load_datetime = response.data[0]['load_datetime']
                 if not oldest_id:
                     print(f"No entries to delete in '{self.table_name}'.")
                     return True  # No deletion needed, but not an error
-
-                # Randomly select one ID to delete
-                # import random
-                # random_id = random.choice(ids)
-
-                # Delete the entry with the selected ID
-                # self.client.table(self.table_name).delete().eq('id', random_id).execute()
-                # print(f"Deleted entry with id {random_id} from '{self.table_name}'.")
                 
                 # Delete entry with oldest load_datetime
                 self.client.table(self.table_name).delete().eq('id', oldest_id).execute()
