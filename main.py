@@ -96,7 +96,7 @@ def main():
 
         # If there are more than 10 entries, delete a random one
         if count > 10:
-            logging.info(f"Table '{table_name}' has more than 10 entries. Deleting a random entry.")
+            logging.info(f"Table '{table_name}' has more than 10 entries. Deleting a oldest entry.")
             success_delete = supabase_client.delete_oldest_entry()
             if not success_delete:
                 all_successful = False
