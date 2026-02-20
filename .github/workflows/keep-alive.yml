@@ -39,8 +39,4 @@ jobs:
           # Go to: Settings > Secrets and variables > Actions > New repository secret
           # Create secrets matching the env var names in your config.json
           SUPABASE_KEY_1: ${{ secrets.SUPABASE_KEY_1 }}
-          # SUPABASE_KEY_2: ${{ secrets.SUPABASE_KEY_2 }}
-          # SUPABASE_KEY_3: ${{ secrets.SUPABASE_KEY_3 }}
-          # SUPABASE_KEY_4: ${{ secrets.SUPABASE_KEY_4 }}
-          # SUPABASE_KEY_5: ${{ secrets.SUPABASE_KEY_5 }}
           # Add more as needed for your databases
